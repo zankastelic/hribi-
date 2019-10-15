@@ -10,6 +10,6 @@ Pri vsakem hribu bom pogledal naslednje stvari:
 
 Hipoteze: 
 
-Ali višina vpliva na pribljubljenost? 
-Ali je priljubljenost odvisna od zahtevnosti poti? 
+*Ali višina vpliva na pribljubljenost? 
+*Ali je priljubljenost odvisna od zahtevnosti poti? 
 
