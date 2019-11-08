@@ -1,0 +1,10 @@
+<table width="100%" cellpadding="5" cellspacing="0">
+<tr bgcolor=#f5f5f5><td><a href='/gorovje/gorisko_notranjsko_in_sneznisko_hribovje/26'>Goriško, Notranjsko in Snežniško hribovje</a></td></tr><tr bgcolor=#eeeeee><td><a href='/gorovje/julijske_alpe/1'>Julijske Alpe</a></td></tr><tr bgcolor=#f5f5f5><td><a href='/gorovje/kamnisko_savinjske_alpe/3'>Kamniško Savinjske Alpe</a></td></tr><tr bgcolor=#eeeeee><td><a href='/gorovje/karavanke/11'>Karavanke</a></td></tr><tr bgcolor=#f5f5f5><td><a href='/gorovje/pohorje_in_ostala_severovzhodna_slovenija/4'>Pohorje in ostala severovzhodna Slovenija</a></td></tr><tr bgcolor=#eeeeee><td><a href='/gorovje/polhograjsko_hribovje_in_ljubljana/5'>Polhograjsko hribovje in Ljubljana</a></td></tr><tr bgcolor=#f5f5f5><td><a href='/gorovje/skofjelosko_cerkljansko_hribovje_in_jelovica/21'>Škofjeloško, Cerkljansko hribovje in Jelovica</a></td></tr><tr bgcolor=#eeeeee><td><a href='/gorovje/zasavsko_-_posavsko_hribovje_in_dolenjska/25'>Zasavsko - Posavsko hribovje in Dolenjska</a></td></tr>
+</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr><td class="naslov1"><b>&nbsp;<h1>Ostale države</h1></b></td></tr>
+</td>
+</tr>
+
+</table>
