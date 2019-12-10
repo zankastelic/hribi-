@@ -94,6 +94,7 @@ for x in vsi_podlinki:
     outVSI.write("\n")
 outV.close()
 
+#zadnjih 29 mi jih pomoje ni zapisal
 
 #    for element in podlinki: 
 #        content = requests.get(element).content
@@ -114,5 +115,43 @@ outV.close()
 #
 #    break
 
+def download_url_to_string(url):
+    """Funkcija kot argument sprejme niz in puskuša vrniti vsebino te spletne
+    strani kot niz. V primeru, da med izvajanje pride do napake vrne None.
+    """
+    try:
+        # del kode, ki morda sproži napako
+        page_content = requests.get(url).text
+    except requests.exceptions.RequestException as e:
+        # koda, ki se izvede pri napaki
+        print(e)
+        page.content = "" # če ne zna prebrat strani, pa da ne vržemo ostalih strani stran 
+    # nadaljujemo s kodo če ni prišlo do napake
+    return page_content
 
+def save_string_to_file(text, directory, filename):
+    """Funkcija zapiše vrednost parametra "text" v novo ustvarjeno datoteko
+    locirano v "directory"/"filename", ali povozi obstoječo. V primeru, da je
+    niz "directory" prazen datoteko ustvari v trenutni mapi.
+    """
+    os.makedirs(directory, exist_ok=True)
+    path = os.path.join(directory, filename)
+    with open(path, 'w', encoding='utf-8') as file_out:
+        file_out.write(text)
+    return None
+
+def save_frontpage(page, directory, filename):
+    """Funkcija shrani vsebino spletne strani na naslovu "page" v datoteko
+    "directory"/"filename"."""
+    content = download_url_to_string(page)
+    save_string_to_file(content,directory, filename)
+    return
+
+# prebrali bomo vse spletne strani: 
+
+# mapa, v katero bomo shranili podatke
+vsi_vrhovi_directory = 'vsi_vrhovi'
+
+# ime CSV datoteke v katero bomo shranili podatke
+csv_filename = 'vrhovi'
 
