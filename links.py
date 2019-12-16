@@ -132,10 +132,17 @@ def download_url_to_string(url):
 
 
 
+<<<<<<< HEAD
 vsebina_spletnih_strani = ''
 
 for x in vsi_podlinki: 
     vsebina_spletnih_strani = vsebina_spletnih_strani + download_url_to_string(x) 
+=======
+vsa_vsebina = '' 
+
+for x in vsi_podlinki: 
+    vsa_vsebina = vsa_vsebina + download_url_to_string(x) 
+>>>>>>> 07fa1031c44a30d67eeddcdd2c106925c24766af
 
 
 f = open("vsebina_spletnih_strani.txt", "w" ,encoding='utf8')
