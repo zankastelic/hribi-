@@ -131,7 +131,13 @@ def download_url_to_string(url):
     return page_content
 
 
-f = open("myfile.txt", "w")
-for vrh in vsi_podlinki: 
-    f.write(download_url_to_string(vrh))
+
+vsebina_spletnih_strani = ''
+
+for x in vsi_podlinki: 
+    vsebina_spletnih_strani = vsebina_spletnih_strani + download_url_to_string(x) 
+
+
+f = open("vsebina_spletnih_strani.txt", "w" ,encoding='utf8')
+f.write(vsa_vsebina)
 f.close()
