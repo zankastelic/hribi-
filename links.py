@@ -139,5 +139,5 @@ for x in vsi_podlinki:
 
 
 f = open("vsebina_spletnih_strani.txt", "w" ,encoding='utf8')
-f.write(vsa_vsebina)
+f.write(vsebina_spletnih_strani)
 f.close()
