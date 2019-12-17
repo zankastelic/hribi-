@@ -27,9 +27,18 @@ vzorec = (
     r'<tr.*"justify">(?P<opis>[\s|\D|\d]*)\s<\/p><\/td><\/tr>' #opis gore 
 )
 
-x = 0
 hribi = []
 for zadetek in re.finditer(vzorec, vsebina):
     hribi.append(zadetek.groupdict())
-    x += 1
-print(x)
+
+with open('hribi.json', 'w') as f:
+    json.dump(hribi, f, indent=2)
+f.close()
+
+with open('hribi.csv', 'w', encoding='utf-8') as csv:
+    writer = csv.DictWriter(csv, fieldnames=['ime', 'država', 'gorovje', 'višina', 'vrsta', 'ogledi', 'priljubljenost_[%]', 'priljubljenost_[mesto]', 'število_poti', 'opis_gore'])
+    writer.writeheader()
+    for x in hribi:
+        writer.writerow(x)
+csv.close() 
+
