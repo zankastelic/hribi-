@@ -6,11 +6,22 @@
         {
             "label": "echo",
             "type": "shell",
-            "command": "python -i ${file}",
+            "command": "echo Hello"
+        },
+        {
+            "label": "Python",
+            "type": "shell",
+            "command": "python -i \\\"${file}\\\"",
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "OCaml",
+            "type": "shell",
+            "command": "ocaml -init \\\"${file}\\\""
         }
     ]
 }
