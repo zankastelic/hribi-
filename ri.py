@@ -8,8 +8,8 @@ import sys
 import re
 import orodja
 
-#with open('vsebina_spletnih_strani.txt', encoding='utf-8') as f:
-#    vsebina = f.read()
+with open('vsebina_spletnih_strani.html', encoding='utf-8') as f:
+    vsebina = f.read()
 
 vzorec = (
     r'<title>(?P<ime>[\D|\s]+)<\/.*e>\s*'#ime
@@ -28,24 +28,20 @@ vzorec = (
     r'<tr.*"justify">(?P<opis>[\s|\D|\d]*)\s<\/p><\/td><\/tr>' #opis gore 
 )
 
+hribi = []
 
-# hribi = []
-for zadetek in re.finditer(vzorec_1, vsebina):
+for zadetek in re.finditer(vzorec, vsebina):
     hribi.append(zadetek.groupdict())
-
-
 
 with open('hribi.json', 'w') as f:
     json.dump(hribi, f, indent=2)
-    f.close()
+f.close()
 
 with open('hribi.csv', 'w', encoding='utf-8') as csv:
     writer = csv.DictWriter(csv, fieldnames=['ime', 'država', 'gorovje', 'višina', 'vrsta', 'ogledi', 'priljubljenost_[%]', 'priljubljenost_[mesto]', 'število_poti', 'opis_gore'])
-    writer = csv.DictWriter(csv, fieldnames=['ime', 'država'])
     writer.writeheader()
     for x in hribi:
         writer.writerow(x)
-csv.close() 
-
+csv.close()
 
 
