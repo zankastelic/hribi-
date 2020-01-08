@@ -43,7 +43,7 @@ def pripravi_imenik(ime_datoteke):
 
 print("sem končal drugič")
 
-podlinki = [] # vsi linki vseh podstrani ---> sem dobil vse linke 
+podlinki = [] # vsi linki vseh podstrani ---> sem dobil vse linke ------> množica =set()
 
 for link in generirani_linki:
     content = requests.get(link).content
@@ -57,7 +57,7 @@ for link in generirani_linki:
         podlinki.append(x)
 print("delajo podlinki")
 
-podlinki = list(dict.fromkeys(podlinki)) 
+#podlinki = list(dict.fromkeys(podlinki)) 
 
 def shrani_spletno_stran(url, ime_datoteke, vsili_prenos=False):
     '''Vsebino strani na danem naslovu shrani v datoteko z danim imenom.'''
@@ -106,7 +106,7 @@ skofjelosko_cerkljansko_hribovje_in_jelovica_linki = podlinki[0:275]
 zasavsko_posavsko_hribovje_in_dolenjska_linki = podlinki[0:275]
 
 
-#for link in podlinki:
-#    shrani_spletno_stran(link, 'files/' + link.split('/')[4]+'.txt')
-#    print(link)
+for i, link in enumerate(podlinki):
+    shrani_spletno_stran(link, 'files/' + link.split('/')[4]+ str(i) + '.txt')
+    print(i)
 
