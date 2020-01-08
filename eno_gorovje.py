@@ -1,0 +1,112 @@
+from bs4 import BeautifulSoup
+import requests
+import csv
+import os
+import sys
+import errno
+
+root_url = 'https://www.hribi.net'
+
+with open('table.txt', 'r') as f:
+    lines = f.readlines()
+    filtered = []
+    for line in lines:
+        line = line.strip()
+        filtered.append(line)
+    
+    table = "".join(filtered) # zduzitev vrstic v datoteki v en string
+
+tabela_gor = BeautifulSoup(table, 'html.parser')
+linki = tabela_gor.find_all('a')
+
+generirani_linki = []
+
+for link in linki:
+    link =  root_url + link['href']
+    generirani_linki.append(link)
+
+print("sem končal")
+
+# do tukaj je kul 
+
+# gorovja niti ne rabmo zapisat v svoj .txt file 
+
+# zdej bi radi da on nardi 8 datotek in v vsako shrani vse podlinke posameznega gorovja: 
+
+
+def pripravi_imenik(ime_datoteke):
+    '''Če še ne obstaja, pripravi prazen imenik za dano datoteko.'''
+    imenik = os.path.dirname(ime_datoteke)
+    if imenik:
+        os.makedirs(imenik, exist_ok=True)
+
+
+print("sem končal drugič")
+
+podlinki = [] # vsi linki vseh podstrani ---> sem dobil vse linke 
+
+for link in generirani_linki:
+    content = requests.get(link).content
+    page = BeautifulSoup(content, 'html.parser')
+    vsebina_z_gorami = page.find(id='gorovjaseznam')
+    linki = vsebina_z_gorami.find_all('a')[3:]
+
+
+    for x in linki:
+        x =  root_url + x['href']
+        podlinki.append(x)
+print("delajo podlinki")
+
+podlinki = list(dict.fromkeys(podlinki)) 
+
+def shrani_spletno_stran(url, ime_datoteke, vsili_prenos=False):
+    '''Vsebino strani na danem naslovu shrani v datoteko z danim imenom.'''
+    try:
+        print('Shranjujem {} ...'.format(url), end='')
+        sys.stdout.flush()
+        if os.path.isfile(ime_datoteke) and not vsili_prenos:
+            print('shranjeno že od prej!')
+            return
+        r = requests.get(url)
+        r.encoding='UTF-8'
+    except requests.exceptions.ConnectionError:
+        print('stran ne obstaja!')
+    else:
+        pripravi_imenik(ime_datoteke)
+        with open(ime_datoteke, 'w', encoding='utf-8') as datoteka:
+            datoteka.write(r.text)
+            print('shranjeno!')
+
+print('lahko delaš') 
+
+# ustavaril bom imena datotek
+imena_datotek = []
+for x in range(len(generirani_linki)):
+    niz = generirani_linki[x].split('/')[4]
+    imena_datotek.append(niz)
+
+print(imena_datotek)
+
+outVSI = open("VSI_vrhovi.txt","w")
+for x in podlinki: 
+    outVSI.write(x)
+    outVSI.write("\n")
+outVSI.close()
+
+print('zdej jih je 1937')
+
+# to je mal delo na roke
+gorisko_notranjsko_in_sneznisko_hribovje_linki = podlinki[0:275]
+julijske_alpe_linki = podlinki[275:]
+kamnisko_savinjske_alpe_linki = podlinki[0:275]
+karavanke_linki = podlinki[0:275]
+pohorje_in_ostala_severovzhodna_slovenija_linki = podlinki[0:275]
+polhograjsko_hribovje_in_ljubljana_linki = podlinki[0:275]
+skofjelosko_cerkljansko_hribovje_in_jelovica_linki = podlinki[0:275]
+zasavsko_posavsko_hribovje_in_dolenjska_linki = podlinki[0:275]
+
+
+#for link in podlinki:
+#    shrani_spletno_stran(link, 'files/' + link.split('/')[4]+'.txt')
+#    print(link)
+
