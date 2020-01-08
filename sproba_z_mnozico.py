@@ -57,7 +57,6 @@ for link in generirani_linki:
         podlinki.add(x)
 print("delajo podlinki")
 
-#podlinki = list(dict.fromkeys(podlinki)) 
 
 def shrani_spletno_stran(url, ime_datoteke, vsili_prenos=False):
     '''Vsebino strani na danem naslovu shrani v datoteko z danim imenom.'''
@@ -97,5 +96,5 @@ print('zdej jih je 1937')
 
 
 for i, link in enumerate(podlinki):
-    shrani_spletno_stran(link, 'files/' + link.split('/')[4]+ str(i) + '.txt')
+    shrani_spletno_stran(link, 'files_z_mnozico/' + link.split('/')[4]+ str(i) + '.txt')
     print(i)

@@ -57,7 +57,7 @@ for link in generirani_linki:
         podlinki.append(x)
 print("delajo podlinki")
 
-#podlinki = list(dict.fromkeys(podlinki)) 
+podlinki = list(dict.fromkeys(podlinki)) #dvojne elemnte vrže vn 
 
 def shrani_spletno_stran(url, ime_datoteke, vsili_prenos=False):
     '''Vsebino strani na danem naslovu shrani v datoteko z danim imenom.'''
@@ -94,16 +94,6 @@ for x in podlinki:
 outVSI.close()
 
 print('zdej jih je 1937')
-
-# to je mal delo na roke
-gorisko_notranjsko_in_sneznisko_hribovje_linki = podlinki[0:275]
-julijske_alpe_linki = podlinki[275:]
-kamnisko_savinjske_alpe_linki = podlinki[0:275]
-karavanke_linki = podlinki[0:275]
-pohorje_in_ostala_severovzhodna_slovenija_linki = podlinki[0:275]
-polhograjsko_hribovje_in_ljubljana_linki = podlinki[0:275]
-skofjelosko_cerkljansko_hribovje_in_jelovica_linki = podlinki[0:275]
-zasavsko_posavsko_hribovje_in_dolenjska_linki = podlinki[0:275]
 
 
 for i, link in enumerate(podlinki):
