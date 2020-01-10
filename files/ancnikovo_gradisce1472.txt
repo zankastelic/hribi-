@@ -1,0 +1,838 @@
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Ančnikovo gradišče</title>
+<meta name="description" content="Natančen opis planinske koče Ančnikovo gradišče in vseh pristopov na Ančnikovo gradišče. Ančnikovo gradišče je arheološko najdišče na območju občine Slovenska Bistrica." />
+<meta name="keywords" content="gore, hribi, planine, panorame, spletne kamere, gps sledi, živali, cvetje, gorništvo, zemljevid" />
+<meta name="author" content="Rok Lukan" />
+<meta name="verify-v1" content="sXljD5GV20+EU7Ux2CdmrEDx3B65WlsKqpNRdgePdFs=" />
+
+<link rel="SHORTCUT ICON" href="/slike/favico.ico" />
+
+<link rel="stylesheet" type="text/css" href="/sistem/slogi4.css" />
+<link rel="alternate" type="application/rss+xml" title="Trenutne razmere - Forum" href="/rss1.xml" />
+<link rel="alternate" type="application/rss+xml" title="Novi opisi gora, izletov" href="/rss4.xml" />
+<link rel="alternate" type="application/rss+xml" title="Novice" href="/rss2.xml" />
+<link rel="alternate" type="application/rss+xml" title="Video posnetki" href="/rss9.xml" />
+<link rel="alternate" type="application/rss+xml" title="Komentirani izleti" href="/rss3.xml" />
+<link rel="alternate" type="application/rss+xml" title="Prireditve" href="/rss5.xml" />
+<link rel="alternate" type="application/rss+xml" title="Panorame" href="/rss6.xml" />
+<link rel="alternate" type="application/rss+xml" title="GPS sledi" href="/rss7.xml" />
+<link rel="alternate" type="application/rss+xml" title="Spletne kamere" href="/rss8.xml" />
+<link rel="alternate" type="application/rss+xml" title="Mali oglasi" href="/rss10.xml" />
+<link rel="alternate" type="application/rss+xml" title="Alpinistični vzponi" href="/rss20.xml" />
+
+<script type="text/javascript">
+
+
+_iprom_consent=false;
+
+
+function piskotki_vec()
+{
+    document.getElementById('cookie_3').innerHTML='<div class="fc3"><'+'ifr'+'ame name="framed" width="500" height="300" border="0" frameborder="0"  overflow-y="scroll" overflow-x="hidden" allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" src="/piskotki_podrobnosti.asp" ><'+'/ifr'+'ame></div>';
+}
+
+function piskotki_obvestilo()
+{
+  var xmlpiskot;
+  try
+    {
+    xmlpiskot=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    try
+      {
+      xmlpiskot=new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    catch (e)
+      {
+      try
+        {
+        xmlpiskot=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      catch (e)
+        {
+        return false;
+        }
+      }
+    }
+    xmlpiskot.onreadystatechange=function()
+      {
+      if(xmlpiskot.readyState==4)
+        {
+            document.getElementById("cookie_1").innerHTML=xmlpiskot.responseText;
+            var $cookie_1 = $('#cookie_1');
+            var iFixedDivHeight = $cookie_1.outerHeight({ 'margin': true });
+            $(window).bind('scroll', function(e) {
+            var iWindowHeight = $(window).height();
+            var iScrollPosition = $(window).scrollTop(); // or document.body.scrollTop
+            $cookie_1.css({ 'top': iWindowHeight + iScrollPosition - iFixedDivHeight });
+        });
+        }
+      }
+    xmlpiskot.open("GET", "/ajax_piskot_obvestilo.asp", true);
+    xmlpiskot.send(null);}
+    
+    
+    function piskotki_strinjanje(id)
+   {
+  var xmlpiskot1;
+  try
+    {
+    xmlpiskot1=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    try
+      {
+      xmlpiskot1=new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    catch (e)
+      {
+      try
+        {
+        xmlpiskot1=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      catch (e)
+        {
+        return false;
+        }
+      }
+    }
+    xmlpiskot1.onreadystatechange=function()
+      {
+      if(xmlpiskot1.readyState==4)
+        {
+            document.getElementById("cookie_1").innerHTML="";
+        }
+      }
+    xmlpiskot1.open("GET", "/ajax_piskot_strinjanje.asp?id="+id, true);
+    xmlpiskot1.send(null);}
+
+
+    function zasebnost_strinjanje(id)
+    {
+        var xmlzasebnost1;
+        try
+        {
+            xmlzasebnost1=new XMLHttpRequest();
+        }
+        catch (e)
+        {
+            try
+            {
+                xmlzasebnost1=new ActiveXObject("Msxml2.XMLHTTP");
+            }
+            catch (e)
+            {
+                try
+                {
+                    xmlzasebnost1=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                catch (e)
+                {
+                    return false;
+                }
+            }
+        }
+        xmlzasebnost1.onreadystatechange=function()
+        {
+            if(xmlzasebnost1.readyState==4)
+            {
+            }
+        }
+        xmlpiskot1.open("GET", "/ajax_zasebnost_strinjanje.asp?id="+id, true);
+        xmlpiskot1.send(null);}
+
+
+function nalozioglase()
+{
+
+
+document.getElementById('oglasb').innerHTML='<'+'if'+'rame'+' id'+'="framed1'+'" na'+'me="fra'+'med" allow'+'transpar'+'ency='+'"true" widt'+'h="120" heig'+'ht="13'+'0" bord'+'er="0" frameb'+'order="0" scro'+'lling="no" al'+'lowtransp'+'arency="true" hs'+'pace="0" vs'+'pace="0" marg'+'inheight="'+'0" margi'+'nwidth="0" sr'+'c="/Nal'+'oziOgla'+'se.'+'asp?'+'id'+'=2" ><'+'/i'+'fra'+'m'+'e>';
+
+
+}
+
+
+
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-427512-40', {'storage': 'none', 'clientId': '38342E35322E3136352E323530707974686F6E2D72657175657374732F322E32322E30'});
+  ga('send', 'pageview', {'anonymizeIp': true});
+</script>
+
+
+
+
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/1068801/365plus', [728, 90], 'div-gpt-ad-1470952521869-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+
+</head>
+
+<body onload="nalozioglase();">
+
+
+<script type="text/javascript">
+function ajaxc()
+  {
+  var xmlHttpcl;
+  try
+    {
+    xmlHttpcl=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    try
+      {
+      xmlHttpcl=new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    catch (e)
+      {
+      try
+        {
+        xmlHttpcl=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      catch (e)
+        {
+        return false;
+        }
+      }
+    }
+    xmlHttpcl.onreadystatechange=function()
+      {
+      }
+    xmlHttpcl.open("GET", "/ajaxc.asp", true);
+    xmlHttpcl.send(null);
+  }
+  ajaxc();
+</script>
+
+
+<script type="text/javascript">
+function locljivost(locljivost)
+  {
+  var xmlHttp;
+  try
+    {
+    xmlHttp=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    try
+      {
+      xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    catch (e)
+      {
+      try
+        {
+        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      catch (e)
+        {
+        return false;
+        }
+      }
+    }
+    xmlHttp.onreadystatechange=function()
+      {
+
+      }
+    xmlHttp.open("GET", "/sistem/locljivost.asp?locljivost=" + locljivost, true);
+    xmlHttp.send(null);
+  }
+</script>
+
+<script>
+var w = document.body.clientWidth;
+var x = 0
+if(x != w){
+    locljivost(w);
+}
+
+</script>
+
+
+
+
+<div id="cookie_1"></div>
+<script>
+piskotki_obvestilo();
+</script>
+
+
+
+<!-- oglas A  -->
+    <div class="OglasA"></div>
+<!-- oglas A konec-->
+<div id="container">
+	<div id="okvir">
+<div id="glava">
+<table cellpadding="0" cellspacing="0" width="100%">
+
+<form name="iskalnik" method="get" action="/iskalnik.asp">
+<input type="hidden" name="location" value="hribi.net" />
+<tr><td><a href="/"><img width="188" height="80" border="0" src="/slike/logo.jpg" alt="Hribi.net"></a></td><td align="left"><table height="20"><tr><td></td></tr></table>
+<script type="text/javascript">
+function iskanjehribi()
+{
+document.getElementById("iskanjeslo").className="iskanjeslo2";
+document.getElementById("iskanjehribi").className ="iskanjehribi";
+document.iskalnik.location.value="hribi.net";
+}
+function iskanjeslo()
+{
+document.getElementById("iskanjeslo").className="iskanjeslo";
+document.getElementById("iskanjehribi").className ="iskanjehribi2";
+document.iskalnik.location.value="";
+}
+</script>
+                <table width="205" cellpadding="0" cellspacing="0"><tr><td align="left" onclick="iskanjehribi();" id="iskanjehribi" class="iskanjehribi">Hribi.net</td><td width="2"></td><td align="left" onclick="iskanjeslo();" id="iskanjeslo" class="iskanjeslo2">Slovenski&nbsp;splet</td><td width="100%"></td></tr>
+                <tr><td colspan="5"><input class="iskanje1" type="text" id="q" name="q" /><input class="gumbiskanje" type="submit" value="Najdi" /></td></tr></table>
+                </form>
+            </td><td width="100%" align="right" valign="bottom">
+            <table cellpadding="0" cellspacing="0"><tr>
+            
+                <td class="pov1x"></td><td class="pov2x"><a class="pov2" href="/registracija.asp"><b>Registracija</b></a></td><td class="pov3x"></td>
+            
+            <td class="pov1x"></td><td class="pov2x"><a class="pov2" href="/navodila.asp"><b>Navodila</b></a></td><td class="pov3x"></td>
+            
+
+
+            <script type="text/javascript">
+function avtoprijavax()
+{
+if(document.prijava.avtoprijava.value=="on")
+{
+    document.getElementById("avtoprijava11").className="avtoprijava2";
+    document.prijava.avtoprijava.value="";
+}
+else
+{
+    document.prijava.avtoprijava.value="on";
+    document.getElementById("avtoprijava11").className ="avtoprijava";
+}
+}
+</script>
+
+
+
+             <form name="prijava" action="/prijava.asp" method="post">
+            <td><span class="anketaodgovor">uporabnik:</span></td><td><input name="UporabniskoIme" type="text" class="prijava1"></td><td>&nbsp;</td><td><span class="anketaodgovor">geslo:</span></td><td><input name="Geslo" type="password" class="prijava1"></td><td>&nbsp;</td><td><input type="submit" value="Prijava" class="glasuj"></td><td>&nbsp;</td><td><input name="avtoprijava" type="hidden"></td><td><span class="avtoprijava2" id="avtoprijava11" onclick="avtoprijavax();">avtoprijava&nbsp;</span></td>
+            </form>
+            
+             </tr></table>
+            </td></tr>
+            </table>
+            </div>
+            </div>
+            
+            
+            
+        <div id="menizgoraj">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="5"></td><td width="160">
+                        <a href="http://www.hiking-trail.net/" title="Hiking"><img width="20" height="12" border="0" src="/slike/eng.gif" alt="English"></a>&nbsp;<a href="http://hr.hribi.net/" title="Planinarenje"><img width="20" height="12" border="0" src="/slike/hrv.gif" alt="Hrvatski" title="Hrvatski"></a>
+                    </td>
+
+
+<td class="pov1b"></td><td class="pov2b"><a class="pov2" href="/gorovja"><b>Seznam gora</b></a></td><td class="pov3b"></td>
+<td class="pov1"></td><td class="pov2"><a class="pov2" href="/goreiskanje.asp"><b>Iskanje izletov</b></a></td><td class="pov3"></td>
+                </tr>
+            </table>
+        <div>
+        <div id="vsebnik">
+            <div id="meni">
+                <div id="meni1">
+
+                 <table width="100%">
+                    <tr><td class="menivrstica" height="16"></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/" title="Novice"><h2>Novice</h2></a></td></tr>
+                    <!--<tr><td class="menivrstica"><a class="meni" target="_blank" href="http://trgovina.hribi.net" title="Trgovina z gorniško opremo"><h2>Trgovina</h2></a></td></tr>-->
+                    <tr><td class="menivrstica"><a class="meni" href="/trenutnerazmere.asp?slo=1" title="Forum - razmere v gorah"><h2>Trenutne razmere</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/gorovja" title="seznam gora z opisi in slikami"><h2>Seznam gora</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/goreiskanje.asp" title="Iskanje izletov"><h2>Iskanje izletov</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/panorama.asp" title="360 stopinjske panorame v gorah"><h2>Panorama</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/video/" title="video"><h2>Video</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/mali_oglasi" title="kupim, prodam, najdeno, izgubljeno"><h2>Mali oglasi</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/skupaj_v_hribe" title="Skupaj v hribe"><h2>Skupaj v hribe</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/vpisna_knjiga_vrhov" title="Vpisna knjiga"><h2>Vpisna knjiga</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/prireditve.asp" title="Prireditve"><h2>Prireditve</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/zivali.asp" title="Slike in opisi živali"><h2>Alpske živali</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/rastline.asp" title="Slike in opisi cvetja"><h2>Cvetje</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/kviz.asp" title="Kvizi o gorah"><h2>Kviz</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/zemljevid.asp" title="Zemljevid"><h2>Zemljevid</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/vreme.asp" title="Vreme"><h2>Vreme</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/gps.asp" title="GPS sledi"><h2>GPS sledi</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/spletne_kamere_v_gorah" title="Spletne kamere - slike v živo"><h2>Spletne kamere</h2></a></td></tr>
+                    <tr><td class="menivrstica"><a class="meni" href="/najslike.asp" title="Slike"><h2>Slike</h2></a></td></tr>
+
+
+                  
+                	<table cellpadding="0" cellspacing="0">
+	                
+                    <span>
+                    <form name="Anketa" method="post" action="/anketa.asp">
+                    <span>
+                	<input type="hidden" name="anketaid" value="651">
+                	<tr><td colspan="2" height="5"></td></tr>
+
+                	<tr bgcolor="#46AF8E"><td colspan="2"><p class="anketanaslov">Anketa</p></td></tr>
+                	<tr><td colspan="2" height="2"></td></tr>
+                	<tr><td colspan="2"><p class="anketabesedilo2">Ali se s Potoškega Stola, vidijo Jesenice?</p></td></tr>
+                	
+                	<tr><td colspan="2" height="2"></td></tr>
+                	<tr><td><input value="odgovor1" type="radio" style="height:15px; margin:0px 0px 0px 2px; padding:0px;" name="anketa"></td><td width="100%"><p class="anketaodgovor2">Da</p></td></tr>
+                	
+                	<tr><td colspan="2" height="2"></td></tr>
+                	<tr><td><input value="odgovor2" type="radio" style="height:15px; margin:0px 0px 0px 2px; padding:0px;" name="anketa"></td><td width="100%"><p class="anketaodgovor2">Ne</p></td></tr>
+                	
+                	<tr><td colspan="2" height="2"></td></tr>
+                	<tr><td><input value="odgovor3" type="radio" style="height:15px; margin:0px 0px 0px 2px; padding:0px;" name="anketa"></td><td><p class="anketaodgovor2">Ne vem</p></td></tr>
+                	
+
+                	<tr><td colspan="2" height="4"></td></tr>
+                	<tr><td colspan="2"><input class="glasuj" size="2" type="submit" value="Glasuj"></td></tr>
+                    <tr><td colspan="2" height="0"></td></tr>
+
+
+
+
+                    </span>
+                	</form>
+                    </span>
+
+
+
+                    
+                    </table>
+                 
+                 </table>
+
+                </div>
+ 
+<div id="meni2">
+               
+
+<div style="position:relative;">
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+            </div>
+            <div id="desnistolpec">
+
+
+
+
+
+</table>
+</td></tr>
+
+</table>
+</td></tr>
+<tr height="3"><td></td></tr>
+<tr><td align="center">
+<span id="oglasb"></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+            <div id="drobtinice">
+            <a href="/gorovja" class="moder">gorovja</a>&nbsp;/&nbsp;<a class="moder" href="/gorovje/pohorje_in_ostala_severovzhodna_slovenija/4">Pohorje in ostala severovzhodna Slovenija</a>&nbsp;/&nbsp;Ančnikovo gradišče
+            </div>
+
+            <div id="oglas"></div>
+            <div id="vsebina">
+
+
+<script type="text/javascript">
+function gorast(id)
+  {
+    var xmlHttpgst;
+  try
+    {
+    // Firefox, Opera 8.0+, Safari
+    xmlHttpgst=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    // Internet Explorer
+    try
+      {
+      xmlHttpgst=new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    catch (e)
+      {
+      try
+        {
+        xmlHttpgst=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      catch (e)
+        {
+        return false;
+        }
+      }
+    }
+    xmlHttpgst.onreadystatechange=function()
+      {
+      if(xmlHttpgst.readyState==4)
+        {
+        }
+      }
+        xmlHttpgst.open("GET", "/ajaxgo"+"rastetje.asp?id="+id, true);
+        xmlHttpgst.send(null);
+  }
+gorast(2298);
+</script>
+
+
+<table cellspacing="0" width="100%">
+<tr bgcolor="#4FC5A0">
+<td class="naslov1"><b>&nbsp;&nbsp;<h1>Ančnikovo gradišče</h1></b></td>
+
+<td class="naslov1">&nbsp;</td>
+
+<td class="naslov1"><img title="koča" src="/slike/koca.gif" alt="koča"></td>
+
+<td class="naslov1">&nbsp;</td>
+
+<td class="naslov1">&nbsp;</td>
+
+<td class="naslov1">&nbsp;</td>
+
+<td class="naslov1">&nbsp;</td>
+
+<td class="naslov1">&nbsp;</td>
+
+
+</tr>
+</table><table valign="top" cellspacing="0" width="100%">
+
+
+
+
+<tr bgcolor="#dddddd"><td colspan="2" align="left" valign="top" class="levospodaj">
+<table valign="top"><tr><td valign="top">
+<table align="left" valign="top" width="300">
+<tr><td><b>Država:</b> <a class=moder href=/gore/slovenija/1>Slovenija</a></td></tr>
+<tr><td><b>Gorovje:</b> <a class="moder" href="/gorovje/pohorje_in_ostala_severovzhodna_slovenija/4">Pohorje in ostala severovzhodna Slovenija</a></td></tr>
+<tr><td><b>Višina:</b> 750&nbsp;m</td></tr>
+
+
+<tr><td><b>Vrsta:</b> koča</td></tr>
+
+
+
+
+
+
+
+</table>
+<td align="left" valign="top">
+<table align="left" valign="top" width="200">
+<tr><td><b>Ogledov:</b> 218105</td></tr>
+
+<tr><td><b>Priljubljenost:</b> 52% (1305. mesto)</td></tr>
+
+<tr><td><b>Število poti:</b> <a class="moder" href="#poti">0</a></td></tr>
+<tr><td><b>Število GPS sledi:</b> <a class="moder" href="/gps.asp">0</a></td></tr>
+
+
+</table>
+</td></tr></table>
+</td>
+
+</td></tr>
+
+
+<tr><td colspan="2"><b>Opis gore:</b></td></tr>
+<tr><td colspan="2"><p align="justify">Ančnikovo gradišče je arheološko najdišče na območju občine Slovenska Bistrica.</p></td></tr>
+
+<script type="text/javascript">
+function radiusf(id,i)
+  {
+    var xmlHttp;
+  try
+    {
+    // Firefox, Opera 8.0+, Safari
+    xmlHttp=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    // Internet Explorer
+    try
+      {
+      xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    catch (e)
+      {
+      try
+        {
+        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      catch (e)
+        {
+        return false;
+        }
+      }
+    }
+    xmlHttp.onreadystatechange=function()
+      {
+      if(xmlHttp.readyState==4)
+        {
+            if(i==1)
+                document.getElementById("radiusseznam1").innerHTML=xmlHttp.responseText;
+            else if(i==2)
+                document.getElementById("radiusseznam2").innerHTML=xmlHttp.responseText;
+            else if(i==3)
+                document.getElementById("radiusseznam3").innerHTML=xmlHttp.responseText;
+
+        }
+      }
+    if(i==1)  
+        xmlHttp.open("GET", "/ajaxradius2.asp?id=2298&radius=" + id, true);
+    else if(i==2)
+        xmlHttp.open("GET", "/ajaxradiuskamere.asp?id=2298&radius=" + id, true);
+    else if(i==3)
+        xmlHttp.open("GET", "/ajaxradiuspanorama2.asp?id=2298&radius=" + id, true);
+    xmlHttp.send(null);
+  }
+
+</script>
+
+
+
+
+<tr height="4"><td colspan="2"></td></tr>
+<tr><td colspan="2"><b>Dodaj v:</b></td></tr>
+<tr><td colspan="2">
+<a class="dodajv" title="Dodaj v Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298&t=Ančnikovo gradišče"><img border="0" src="/slike/facebook_16.png" /></a>&nbsp;<a title="Dodaj v Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298&t=Ančnikovo gradišče">facebook</a>
+ &nbsp; <a class="dodajv" title="Dodaj v Twitter" target="_blank" href="http://twitter.com/home/?status=Ančnikovo gradišče+http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298"><img border="0" src="/slike/twitter_16.png" /></a>&nbsp;<a title="Dodaj v Twitter" target="_blank" href="http://twitter.com/home/?status=Ančnikovo gradišče+http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298">Twitter</a>
+ &nbsp; <a class="dodajv" title="Dodaj v myspace" target="_blank" href="http://www.myspace.com/index.cfm?fuseaction=postto&t=Ančnikovo gradišče&c=Natančen opis planinske koče Ančnikovo gradišče in vseh pristopov na Ančnikovo gradišče. Ančnikovo gradišče je arheološko najdišče na območju občine Slovenska Bistrica.&u=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298"><img border="0" src="/slike/myspace_16.png" /></a>&nbsp;<a title="Dodaj v myspace" target="_blank" href="http://www.myspace.com/index.cfm?fuseaction=postto&t=Ančnikovo gradišče&c=Natančen opis planinske koče Ančnikovo gradišče in vseh pristopov na Ančnikovo gradišče. Ančnikovo g&u=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298">myspace</a>
+ &nbsp; <a class="dodajv" title="Dodaj v Digg" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298&title=Ančnikovo gradišče"><img border="0" src="/slike/digg_alt_16.png" /></a>&nbsp;<a title="Dodaj v Digg" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298&title=Ančnikovo gradišče">Digg</a>
+ &nbsp; <a class="dodajv" title="Dodaj v delicious" target="_blank" href="http://delicious.com/save?v=5&noui&jump=close&url=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298&title=Ančnikovo gradišče"><img border="0" src="/slike/delicious_16.png" /></a>&nbsp;<a title="Dodaj v delicious" target="_blank" href="http://delicious.com/save?v=5&noui&jump=close&url=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298&title=Ančnikovo gradišče">delicious</a>
+ &nbsp; <a class="dodajv" title="Dodaj v Reddit" target="_blank" href="http://reddit.com/submit?url=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298&title=Ančnikovo gradišče"><img border="0" src="/slike/reddit_16.png" /></a>&nbsp;<a title="Dodaj v Reddit" target="_blank" href="http://reddit.com/submit?url=http%3A%2F%2Fwww.hribi.net%2Fgora%2Fancnikovo_gradisce%2F4%2F2298&title=Ančnikovo gradišče">reddit</a>
+
+</td></tr>
+
+
+
+<!-- ************ slike ************ -->
+
+<tr height="4"><td colspan="2"></td></tr>
+<tr><td colspan="2"><b>Slike:</b></td></td></tr>
+
+<tr><td colspan="2">
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02137353291.jpg" href="/slika.asp?gora=12179"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02137353291.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02317353292.jpg" href="/slika.asp?gora=12180"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02317353292.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02147353293.jpg" href="/slika.asp?gora=12181"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02147353293.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02157353294.jpg" href="/slika.asp?gora=12182"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02157353294.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02167353295.jpg" href="/slika.asp?gora=12183"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02167353295.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02297353296.jpg" href="/slika.asp?gora=12184"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02297353296.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02307353297.jpg" href="/slika.asp?gora=12185"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02307353297.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02287353298.jpg" href="/slika.asp?gora=12186"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02287353298.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02177353299.jpg" href="/slika.asp?gora=12187"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02177353299.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02207353300.jpg" href="/slika.asp?gora=12188"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02207353300.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02227353301.jpg" href="/slika.asp?gora=12189"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02227353301.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02237353302.jpg" href="/slika.asp?gora=12190"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02237353302.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02257353304.jpg" href="/slika.asp?gora=12191"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02257353304.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02267353305.jpg" href="/slika.asp?gora=12192"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02267353305.th.jpg"></a>
+
+<a target="/slika.asp?i=//www.hribi.net/slike5/DSCN02277353306.jpg" href="/slika.asp?gora=12193"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//www.hribi.net/slike5/DSCN02277353306.th.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998114202708_10207476582808959_3737703291530006018_n.jpg" href="/slika.asp?gora=15582"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998114202708_10207476582808959_3737703291530006018_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998114237748_10207476578008839_8960980154683350119_n.jpg" href="/slika.asp?gora=15583"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998114237748_10207476578008839_8960980154683350119_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998114237699_10207476575368773_4973412231348873693_n.jpg" href="/slika.asp?gora=15584"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998114237699_10207476575368773_4973412231348873693_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998114237637_10207476571888686_122634241802114250_n.jpg" href="/slika.asp?gora=15585"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998114237637_10207476571888686_122634241802114250_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998114232656_10207476571528677_562760866268126168_n.jpg" href="/slika.asp?gora=15586"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998114232656_10207476571528677_562760866268126168_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998214232396_10207476570128642_2518501859297288455_n.jpg" href="/slika.asp?gora=15587"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998214232396_10207476570128642_2518501859297288455_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998214222251_10207476574208744_6584138083130754209_n.jpg" href="/slika.asp?gora=15588"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998214222251_10207476574208744_6584138083130754209_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998214212729_10207476579688881_6951810651435838186_n.jpg" href="/slika.asp?gora=15589"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998214212729_10207476579688881_6951810651435838186_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998214212108_10207476575128767_25217086937056466_n.jpg" href="/slika.asp?gora=15590"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998214212108_10207476575128767_25217086937056466_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998314212017_10207476570448650_7551130944450211169_n.jpg" href="/slika.asp?gora=15591"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998314212017_10207476570448650_7551130944450211169_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998314202708_10207476582808959_3737703291530006018_n.jpg" href="/slika.asp?gora=15592"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998314202708_10207476582808959_3737703291530006018_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998314199761_10207476582288946_5155637069330891719_n.jpg" href="/slika.asp?gora=15593"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998314199761_10207476582288946_5155637069330891719_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998314199543_10207476570808659_5131262269626643600_n.jpg" href="/slika.asp?gora=15594"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998314199543_10207476570808659_5131262269626643600_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998314199543_10207476570808659_5131262269626643600_n__1_.jpg" href="/slika.asp?gora=15595"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998314199543_10207476570808659_5131262269626643600_n__1_.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998314199224_10207476581448925_4392512198519311405_n.jpg" href="/slika.asp?gora=15596"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998314199224_10207476581448925_4392512198519311405_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998314192801_10207476573608729_5445998132697424114_n.jpg" href="/slika.asp?gora=15597"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998314192801_10207476573608729_5445998132697424114_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998414192696_10207476571088666_3338244256991819084_n.jpg" href="/slika.asp?gora=15598"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998414192696_10207476571088666_3338244256991819084_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998414192163_10207476575688781_2783909607171119366_n.jpg" href="/slika.asp?gora=15599"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998414192163_10207476575688781_2783909607171119366_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998414184390_10207476578808859_3209038432660974882_n.jpg" href="/slika.asp?gora=15600"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998414184390_10207476578808859_3209038432660974882_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998414141605_10207476580928912_9011729804216626625_n.jpg" href="/slika.asp?gora=15601"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998414141605_10207476580928912_9011729804216626625_n.jpg"></a>
+
+<a target="/slika.asp?i=//slike.hribi.net/slike8/904998413879431_10207476572168693_8403513125413072310_n.jpg" href="/slika.asp?gora=15602"><img width="160" height="120" alt="Ančnikovo gradišče" style="border: 1px solid #99ACD6" src="//slike.hribi.net/slike8/2_904998413879431_10207476572168693_8403513125413072310_n.jpg"></a>
+
+
+</td></tr>
+
+<!-- ************ video ************ -->
+
+<tr><td colspan="2">
+
+
+</td></tr>
+
+</table>
+<table cellspacing="0" width="100%">
+<tr bgcolor="#4FC5A0"><td class="naslov1"><a name="poti"></a><b><h1>Poti:</h1></b></td><td class="naslov1"><b>Čas</b></td><td class="naslov1" colspan="2"><b>Zahtevnost</b></td>
+
+
+<form method="post" action="/potnovo.asp?id=2298">
+<td class="naslov1"></td>
+</form>
+
+
+</tr>
+
+<tr><td colspan="4">Ni podatkov o poteh.</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+            </div>
+
+<div id="noga">Copyright&nbsp;©&nbsp;2006-2020&nbsp;Hribi.net, <a class="noga" href="/pogoji.asp">Pogoji&nbsp;uporabe</a>, <a class="noga" target="_blank" href="http://oglasi.hribi.net">Oglaševanje</a>, <a class="noga" href="/piskotki.asp">Piškotki</a></div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+<div id="oglasd" class="oglasd">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- hribi-720-90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-0186014428427864"
+     data-ad-slot="6313714807"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+var ddd = new Date();
+var nnn = ddd.getUTCSeconds(); 
+
+
+</script>
+
+
+<div id="oglasa" class="oglasizgoraj">
+
+ <!-- iPROM Central - www.centraliprom.com -->
+<script type="text/javascript">
+    _iprom_s='obds453j';
+    _iprom_d='468x60';
+</script>
+<script type="text/javascript" src="//central.iprom.net/adserver/adserver.js"></script>
+<!-- iPROM Central - www.centraliprom.com -->
+</div>
+
+
+</body>
+</html>
+
